@@ -10,24 +10,46 @@
     <body>
         <header>
             <div class="navbar">
-                <h1>Suit Suit Berhadiah</h1>
+                <div class="navbar-brand">
+                    <h3>Suit Suit Berhadiah</h3>
+                </div>
             </div>
         </header>
 
         <main>
             <section class="pilihan-bot">
                 <h3>Pilihan Bot</h3>
-                <img src="./assets/img/kertas.png" alt="pilihan bot">
+                <img src="./assets/img/kertas.png" alt="kertas" title="kertas">
+            </section>
+            <section>
+                <h3>Skor</h3>
+                <table cellspacing="10px">
+                    <tbody>
+                        <tr>
+                            <td>User</td>
+                            <td>:</td>
+                            <td class="userscore">0</td>
+                        </tr>
+                        <tr>
+                            <td>Bot</td>
+                            <td>:</td>
+                            <td class="botscore">0</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <section class="pilihan">
                 <h3>Pilih</h3>
                 <div>
-                    <img src="./assets/img/batu.png" alt="batu" class="pilihansuit" data-pilihan="batu">
-                    <img src="./assets/img/gunting.png" alt="gunting" class="pilihansuit" data-pilihan="gunting">
-                    <img src="./assets/img/kertas.png" alt="kertas" class="pilihansuit" data-pilihan="kertas">
+                    <img src="./assets/img/batu.png" alt="batu" class="pilihansuit" data-pilihan="batu" title="batu">
+                    <img src="./assets/img/gunting.png" alt="gunting" class="pilihansuit" data-pilihan="gunting" title="gunting">
+                    <img src="./assets/img/kertas.png" alt="kertas" class="pilihansuit" data-pilihan="kertas" title="kertas">
                 </div>
             </section>
         </main>
+        <script src="script/utils/Suit.js"></script>
+        <script src="script/utils/SuitBot.js"></script>
+        <script src="script/utils/User.js"></script>
         <script src="script/index.js"></script>
     </body>
 </html>
