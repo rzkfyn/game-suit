@@ -9,14 +9,14 @@ class User extends Suit {
 
     isWin(pilihanUser, pilihanBot) {
         for (const condition of this.winConditions) {
-            if (condition[0] == [pilihanUser, pilihanBot][0] && condition[1] == [pilihanUser, pilihanBot][1]) return true;
+            if (condition[0] == pilihanUser && condition[1] == pilihanBot) return true;
         }
         return false;
     }
 
     isLose(pilihanUser, pilihanBot) {
         for (const condition of this.loseConditions) {
-            if (condition[0] == [pilihanUser, pilihanBot][0] && condition[1] == [pilihanUser, pilihanBot][1]) return true;
+            if (condition[0] == pilihanUser && condition[1] == pilihanBot) return true;
         }
         return false;
     }

@@ -37,7 +37,6 @@ function randomImg() {
 
 function plusUserScore() {
     userScore++;
-    console.log(userScore);
     setScore(userScore, document.querySelector('.userscore'));
 }
 
